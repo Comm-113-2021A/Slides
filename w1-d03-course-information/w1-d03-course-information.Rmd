@@ -1,0 +1,226 @@
+---
+title: "Course Information"
+subtitle: "<br><br> Data Science for Beginners"
+author: "<br> Prof. Yphtach (Yph) Lelkes"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: ["../../xaringan-themer.css", "../../slides.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+---
+
+```{r child = "../../setup.Rmd"}
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(viridis)
+library(sugrrants)
+library(lubridate)
+```
+
+class: middle
+
+# Course structure
+
+---
+
+## Weekly structure
+
+- **Tuesday:** Lecture videos for the week released
+
+- **Thursday:** Workshops on Zoom
+
+- **Friday:** Office hours--3-4:30 on
+
+- **Sunday:** Weekly quiz due
+
+---
+
+## Lecture videos
+
+- Released on Mondays
+
+- Course content + weekly "State of DSB"
+
+- Watch (and learn from) them before Friday's workshops
+
+- Sprinkled with application exercises
+
+
+---
+
+## Workshops / labs
+
+- On Thursdays 3-4:30 Philly time
+
+- On Zoom - will not be recorded, attendance is expected
+
+- Work in teams on weekly computing lab exercises during workshop
+
+- Finish outside of workshop and turn in by Tuesday 4pm Philly time
+
+- **Tip:** Set up weekly team meetings between Friday and Tuesday
+
+- Lowest score dropped
+
+---
+
+## Office hours
+
+- Fridays 3-4:30
+
+- On Zoom - will not be recorded
+
+- Come and get real time answers to your questions or just say hi!
+
+
+---
+
+## Homework assignments
+
+- Due on Thursday every other week at 4pm
+
+- Work on them individually
+
+- **Tip:** Do the (optional) R tutorials which will introduce you to the datasets and topics covered in the homework assignments
+
+- Lowest score dropped
+
+---
+
+## Quizzes
+
+- Due on Sundays every week at midnight philly time time
+
+- Work on them individually
+
+- 10 multiple choice questions, some requiring a bit of coding some conceptual
+
+- **Tip:** Don't leave it till the last minute!
+
+- Lowest score dropped
+
+---
+
+## Project
+
+- TL;DR: Find a dataset and do something with it!
+
+- Work in teams
+
+- Proposal, (optional) re-proposal, one-page write up, 5 min presentation
+
+- You must complete the project and participate in the presentation (pre-recorded or live)
+
+- **Tip:** Stick to optional interim deadlines
+
+---
+
+## Your final score in the course
+
+- Weights of graded components:
+  - Homework: 40%
+  - Lab: 20%
+  - Project: 30%
+  - Quiz: 10%
+
+---
+
+class: middle
+
+# Course policies
+
+---
+
+## Zoom expectations
+
+.pull-left-wide[
+- When in a large session you should,
+  - have your microphone muted by default
+  - use the raise your hand feature or type in the chat for questions and comments
+
+- In the small team sessions you should,
+  - have your camera turned on as much as possible
+  - engage with your team mates via voice and text chat
+  - take turns sharing your screen when necessary
+]
+
+---
+
+## Collaboration policy
+
+.pull-left-wide[
+- Only work that is clearly assigned as team work should be completed collaboratively. 
+
+- Individual assignments must be completed individually, you may not directly share or discuss answers / code with anyone other than the instructors and tutors.
+
+- You are welcome to discuss the problems in general and ask for advice.
+]
+
+---
+
+## Sharing / reusing code policy
+
+.pull-left-wide[
+- We are aware that a huge volume of code is available on the web, and many tasks may have solutions posted.
+
+- Unless explicitly stated otherwise, this course's policy is that you may make use of any online resources (e.g. Google, StackOverflow, etc.) but you must explicitly cite where you obtained any code you directly use or use as inspiration in your solution(s). 
+
+- Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism, regardless of source.
+]
+
+---
+
+## Late work
+
+.pull-left-wide[
+- For reasons outside of illness, family circumstances, and other exigencies, you will lose 5 percent per day late
+
+]
+
+
+---
+
+## Getting help
+
+.pull-left-wide[
+- **Piazza** for course content, logistics, etc. discussion on the course discussion forum
+
+- **Office hours** for real-time video chat
+
+- Most importantly, ask questions, don't worry about whether you're choosing the right medium / format.
+]
+
+---
+
+## Diversity & inclusion
+
+.pull-left-wide[
+- **Intent:** Present materials and activities that are respectful of all axes of diversity.
+
+- Let me know if you have preferred name and pronouns.
+
+- Reach out if your performance in the class is being impacted by your experiences outside of class.
+
+- I am always in the process of learning about diverse perspectives and identities. If something was said in class that made you feel uncomfortable, please let me know.
+]
+
+---
+
+## Learning during a pandemic
+
+.pull-left-wide[
+- Life sucks right now!
+
+- I want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don't hesitate to ask.
+
+- You *never* owe me personal information about your health (mental or physical) but you're always welcome to talk to me. If I can’t help, I likely know someone who can.
+
+- I want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded during this crisis.
+]
