@@ -5,7 +5,7 @@ author: "<br> Prof. Yphtach (Yph) Lelkes"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   xaringan::moon_reader:
-    css: ["../../xaringan-themer.css", "../../slides.css"]
+    css: ["../xaringan-themer.css", "../slides.css"]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -14,7 +14,7 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r child = "../../setup.Rmd"}
+```{r child = "../setup.Rmd"}
 ```
 
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
