@@ -13,7 +13,7 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r child = "../setup.Rmd"}
+```{r child = "../../setup.Rmd"}
 ```
 
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
