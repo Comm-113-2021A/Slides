@@ -253,9 +253,9 @@ You can find out more about the dataset by inspecting its documentation (which c
 The two lines of code can be read as "Start with the seattlepets data frame, and then count the animal_names, and display the results sorted in descending order. The "and then" in the previous sentence maps to %>%, the pipe operator, which takes what comes before it and plugs it in as the first argument of the function that comes after it.
 ```
 
-```{r}
+```{r,eval=TRUE}
 seattlepets %>%
-  count(animal_name, sort = TRUE)
+  count(animal_name, sort = TRUE) 
 ```
 
 ✏️ *Write your answer in your R Markdown document under Exercise 3. In this exercise you will not only provide a written answer but also include some code and output. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 3", and push.*
@@ -272,6 +272,7 @@ seattlepets %>%
   group_by(species) %>%
   count(animal_name, sort = TRUE)
 ```
+
 
 But this output isn't exactly what we wanted.
 We wanted to know the most common cat and dog names, but there are barely any cats present in this output!
@@ -297,7 +298,7 @@ It may be a bit confusing that both of these are `n`, but this is because we alr
 seattlepets %>% 
   group_by(species) %>%
   count(animal_name, sort = TRUE) %>% 
-  slice_max(n, n = 5)
+  slice_max(n, n = 5) 
 ```
 
 1.  Based on the previous output we can easily identify the most common cat and dog names in Seattle, but the output is sorted by `n` (the frequencies) as opposed to being organized by the `species`. Build on the pipeline to arrange the results so that they're arranged by `species` first, and then `n`. This means you will need to add one more step to the pipeline, and you have two options: `arrange(species, n)` or `arrange(n, species)`. You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
