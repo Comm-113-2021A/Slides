@@ -434,7 +434,7 @@ ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
 
 ---
 
-## Hex plot
+## Hex plots
 
 ```{r warning = FALSE}
 ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
@@ -443,7 +443,7 @@ ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
 
 ---
 
-## Hex plot
+## Hex plots
 
 ```{r warning = FALSE}
 ggplot(loans %>% filter(debt_to_income < 100), 
